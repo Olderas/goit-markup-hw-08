@@ -500,7 +500,6 @@ h2 {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
-  margin-left: 84px;
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -510,6 +509,20 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     margin-left: 58px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
