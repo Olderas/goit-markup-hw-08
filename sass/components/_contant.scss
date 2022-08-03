@@ -1,0 +1,125 @@
+.contact {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: 84px;
+    // margin-left: auto;
+
+@media screen and (min-width:768px) {
+    flex-wrap: wrap;
+    display: flex;   
+    margin-left: 58px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+} 
+
+// Menu mobile 
+
+.contact-list__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+
+// .contact-list__button {
+//     display: inline-flex;
+//     margin: 0;
+//     padding: 0;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+// }
+
+// .contact-list__button .icon-cross {
+//     display: none;
+// }
+
+// .contact-list__button.is-open .icon-cross {
+//     display: block;
+// }
+
+// .contact-list__button.is-open .icon-menu {
+//     display: none;
+// }
+
+// .menu {
+//     display: none;
+    
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     background-color: red;
+//     padding: 20px;
+//     text-align: center;
+//     font-size: 20px;
+//     &.is-open {
+//         display: block;
+//     }
+// }
+
+// .mobile-menu.is-hidden {
+// opacity: 0;
+//     pointer-events: none;
+// }
+
+
+
+// 
+
+.contact .item {
+    padding: 32px 0px;
+    margin: 0;
+
+}
+
+
+.contact .contact__list+.contact__list {
+    // margin-left: 30px;
+}
+
+a.contact__link:hover,
+.contact__link:focus {
+    color: #188ce8;
+    fill: #188ce8;
+
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    fill: currentColor;
+    color: currentColor;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    transition: color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
+}
+
+.contact__icon-massage {
+    margin-right: 10px;
+    /* fill: currentColor; */
+}
