@@ -1135,6 +1135,18 @@ textarea {
   outline: none;
 }
 
+.icon-cross {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-cross {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1151,7 +1163,7 @@ textarea {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
   -webkit-transform: translateX(100%);
