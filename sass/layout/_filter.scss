@@ -99,7 +99,10 @@ width: 100%;
 }
 
 .project-list__link{
-display: block;
+text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-list__link:hover,
@@ -122,6 +125,7 @@ box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0p
 position: relative;
 overflow: hidden;
 
+
 }
 
 .project-list__description::before {
@@ -143,6 +147,13 @@ overflow: hidden;
 }
 
 .project-list__paragraph {
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+
+
+letter-spacing: 0.03em;
     display: flex;
     font-size: 18px;
     line-height: 1.56;
@@ -151,10 +162,10 @@ overflow: hidden;
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    // padding-left: 24px;
+    // padding-right: 24px;
+    // padding-top: 63px;
+    // padding-bottom: 63px;
     position: absolute;
     bottom: 0;
     color: var(--primari-white-color);
@@ -174,6 +185,7 @@ overflow: hidden;
     border-right: 1px solid var(--border-box);
     border-bottom: 1px solid var(--border-box);
     border-left: 1px solid var(--border-box);
+    flex-grow: 1;
     
     
 }
@@ -185,14 +197,15 @@ overflow: hidden;
 
 .project-list .project-list__title {
     font-family: 'Roboto';
-    color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
     margin-left: auto;
     margin-bottom: 4px;
     text-align: left;
-    line-height: 2;
-    letter-spacing: 0.04em;
+    
 }
 
 

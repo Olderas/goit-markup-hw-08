@@ -18,6 +18,7 @@
 
 .hero__title {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
     color: var(--primari-white-color);
     letter-spacing: 0.06em;
@@ -25,15 +26,15 @@
         font-size: 26px;
         line-height: 1.62;
     text-transform: uppercase;
-    // width: 696px;
+    width: 360px;
+   
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 
-    @media screen and (min-width:768px) {
-        font-size: 26px;
-    font-weight: 900;
-    line-height: 1.62;
-    width: 360px;
+@media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
     }
 }
