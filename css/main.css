@@ -1966,34 +1966,24 @@ textarea {
 }
 
 .project-list__paragraph {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
-  bottom: 0;
-  color: var(--primari-white-color);
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: white;
+  background-color: var(--card-bg-color);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  /* opacity: 0; */
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  -webkit-transition: color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .project-list__link:hover .project-list__paragraph,
