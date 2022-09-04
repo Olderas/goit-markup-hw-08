@@ -20,20 +20,99 @@
     <header class="header">
         <div class="container headers">
 
-            <nav class="main-nav">
+            <nav class="navigation">
+                <a class="logo link" href="index.html" lang="en">Web<span class="logo__black">Studio</span></a>
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link navigation__link--current link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link " href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__link contact__link-mail link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon contact__icon-mail" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link contact__link-phone  link" href="tel:+380961111111">
+                        <svg class="contact__icon contact__icon-phone" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button type="button" class="menu-button menu-toggle js-open-menu" aril-expanded="false"
+                aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons.svg/telefon-menu.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+        <!--Mobile menu-->
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-button menu-toggle js-close-menu" aria-controls="mobile-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu-close" href="./images/icons.svg/telefon-menu.svg#cross"></use>
+
+                </svg>
+            </button>
+
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__item-nav">
+                    <a class="mobile-menu__link-nav mobile-menu__link-curent" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item-nav">
+                    <a class="mobile-menu__link-nav" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item-nav">
+                    <a href="" class="mobile-menu__link-nav">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__item-contacts">
+                    <a href="tel:+380961111111" class="mobile-menu__link-phone">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__item-contacts">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__link-email">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__item-socials">
+                    <a class="mobile-menu__link-socials" href="#" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mobile-menu__item-socials">
+                    <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mobile-menu__item-socials">
+                    <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mobile-menu__item-socials">
+                    <a class="mobile-menu__link-socials" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <nav class="main-nav">
 
                 <a class="logo-link" href="./index.html">
                     <span class="logo-accent">Web</span>Studio
 
                 </a>
-                <!-- <ul class="site-nav">
+                <ul class="site-nav">
                     <li class="site-nav__item"><a id="studio" class="site-nav__link strip" href="">Студия</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
-                </ul> -->
+                </ul>
             </nav>
 
-            <!-- <ul class="contact">
+            <ul class="contact">
                 <li class="contact__list">
                     <a class="contact__link" href="mailto:info@devstudio.com">
                         <svg class="contact__icon-massage" width="16px" height="12px">
@@ -55,12 +134,12 @@
             </ul> -->
 
 
-            <!-- <button type="button" class="contact-list__button is-open">
+        <!-- <button type="button" class="contact-list__button is-open">
                     <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross" href="./images/icons.svg/telefon-menu.svg#cross"></use>
                         <use class="icon-menu" href="./images/icons.svg/telefon-menu.svg#menu"> </use>
                     </svg>
-                </button> -->
+                </button>
 
 
 
@@ -69,9 +148,9 @@
                     <use class="icon-menu" href="./images/icons.svg/telefon-menu.svg#menu"></use>
                     <use class="icon-cross" href="./images/icons.svg/telefon-menu.svg#cross"> </use>
                 </svg>
-            </button>
+            </button>  -->
 
-            <!-- <ul class="menu">
+        <!-- <ul class="menu">
                 <li><a href="" class="link">About</a></li>
                 <li><a href="" class="link">Products</a></li>
                 <li><a href="" class="link">Contacts</a></li>
@@ -81,7 +160,7 @@
 
 
 
-        </div>
+        <!-- </div> -->
 
 
 
@@ -89,7 +168,7 @@
 
 
 
-        <div class="menu-container js-menu-container" id="mobile-menu">
+        <!-- <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
                 <svg width="24px" height="14px" aria-label="Переключатель мобильного меню">
 
@@ -103,7 +182,7 @@
                 <li><a href="" class="link">Contacts</a></li>
                 <li><a href="" class="link">Career</a></li>
             </ul>
-        </div>
+        </div> -->
 
     </header>
 
