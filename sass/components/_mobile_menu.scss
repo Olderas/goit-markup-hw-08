@@ -11,10 +11,10 @@
     flex-direction: column;
     overflow-y: scroll;
 
-    background-color: var(--second-accent-text-color);
-    transition: opacity var(--slow-anim), visibility var(--slow-anim);
+    background-color: #FFFFFF;
+    transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
     padding: 10px;
-    transition: transform var(--slow-anim);
+    transition: transform 250ms $timing-function;
 
 
 }

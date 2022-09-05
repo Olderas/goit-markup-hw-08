@@ -257,7 +257,7 @@
         content: '';
         border-radius: 2px;
         background-color: var(--accent-color);
-        transition: background-color var(--slow-anim);
+        transition: background-color $timing-function;
     }
 }
 
