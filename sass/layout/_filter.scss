@@ -153,16 +153,34 @@ position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 63px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.56;
     letter-spacing: 0.03em;
     color: white;
     background-color: var(--card-bg-color);
     transform: translateY(100%);
     transition: transform 250ms var(--timing-function), color 250ms var(--timing-function);
-    
+
+    @media screen and (max-width: 370px) {
+            padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    }
+
+        @media screen and (min-width: 371px) {
+
+    padding-top: 65px;
+ }
+                 @media screen and (min-width: 1199px) {
+        padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 63px;
+            padding-bottom: 63px;
+                 }
 // font-family: 'Roboto';
 // font-style: normal;
 // font-weight: 400;
