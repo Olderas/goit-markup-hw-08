@@ -697,7 +697,6 @@ a.contact__link:hover,
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
@@ -710,6 +709,11 @@ a.contact__link:hover,
   background-color: white;
   -webkit-transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
   transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 400px) {
+  .button-close {
+    top: 8px;
+  }
 }
 
 .button-close:hover,
@@ -900,8 +904,8 @@ transform: translateY(-35px);
 .icon-chekbox {
   display: inline-block;
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
   margin-right: 8px;
@@ -930,6 +934,7 @@ transform: translateY(-35px);
   background-image: url(../images/icons.svg/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 /* MODAL */
@@ -1098,7 +1103,7 @@ textarea {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-box);
+  border-bottom: 1px solid #ECECEC;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -1234,7 +1239,7 @@ textarea {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
@@ -1266,7 +1271,7 @@ textarea {
 }
 
 .logo__black {
-  color: var(--text-title-color);
+  color: #212121;
 }
 
 .navigation__list {
@@ -1291,14 +1296,14 @@ textarea {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--text-title-color);
+  color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  -webkit-transition: color var(--slow-anim);
-  transition: color var(--slow-anim);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
@@ -1325,8 +1330,8 @@ textarea {
   content: "";
   border-radius: 2px;
   background-color: var(--accent-color);
-  -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation__link .link:active {
@@ -1383,9 +1388,9 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  -webkit-transition: color var(--slow-anim);
-  transition: color var(--slow-anim);
+  color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
@@ -1479,7 +1484,7 @@ textarea {
 .footer-address {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-address {
     text-align: center;
   }
@@ -1747,13 +1752,13 @@ textarea {
           flex-direction: column;
   overflow-y: scroll;
   background-color: #FFFFFF;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 10px;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 48px 40px;
+  -webkit-transition: -webkit-transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -1807,6 +1812,12 @@ textarea {
   color: #2196F3;
   text-decoration: none;
 }
+@media screen and (max-width: 400px) {
+  .mobile-menu__link-phone {
+    font-size: 25px;
+    line-height: 1.22;
+  }
+}
 
 .mobile-menu__link-email {
   font-weight: 500;
@@ -1815,6 +1826,12 @@ textarea {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+}
+@media screen and (max-width: 400px) {
+  .mobile-menu__link-email {
+    font-size: 20px;
+    line-height: 2;
+  }
 }
 
 .mobile-menu__link-nav {
@@ -1830,6 +1847,12 @@ textarea {
 .mobile-menu__link-nav:hover, .mobile-menu__link-nav:focus {
   color: var(--accent-color);
 }
+@media screen and (max-width: 400px) {
+  .mobile-menu__link-nav {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+}
 
 .mobile-menu__link-curent {
   color: var(--accent-color);
@@ -1841,6 +1864,16 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 400px) {
+  .mobile-menu__socials {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .mobile-menu__socials {
+    margin-top: 32px;
+  }
 }
 
 .mobile-menu__item-socials {
@@ -1854,9 +1887,30 @@ textarea {
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+@media screen and (max-width: 400px) {
+  .mobile-menu__item-socials:not(:last-child) {
+    padding-right: 5px;
+    margin-right: 0;
+  }
+}
+
+.menu-button:hover > .mobile-menu__icon,
+.menu-button:focus > .mobile-menu__icon {
+  fill: var(--accent-color);
+}
+
+.mobile-menu__icon {
+  width: 24px;
+  height: 16px;
+}
 
 .mobile-menu__item-socials:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 400px) {
+  .mobile-menu__item-socials:not(:last-child) {
+    margin-right: 5px;
+  }
 }
 
 .mobile-menu__link-socials {
@@ -1866,6 +1920,12 @@ textarea {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (max-width: 400px) {
+  .mobile-menu__link-socials {
+    font-size: 8px;
+    line-height: 1.22;
+  }
 }
 
 .feature-list {
@@ -2368,6 +2428,7 @@ textarea {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  overflow: auto;
   color: white;
   background-color: var(--card-bg-color);
   -webkit-transform: translateY(100%);

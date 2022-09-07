@@ -13,7 +13,7 @@
 
     background-color: #FFFFFF;
     transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
-    padding: 10px;
+    padding: 48px 40px;
     transition: transform 250ms $timing-function;
 
 
@@ -62,12 +62,15 @@
 
 .mobile-menu__contacts {
     margin-top: auto;
+
+
 }
 
 .mobile-menu__item-contacts {
     list-style: none;
     margin-top: auto;
     margin-bottom: 32px;
+
 
 }
 
@@ -82,6 +85,11 @@
     color: #2196F3;
     text-decoration: none;
 
+        @media screen and (max-width:400px) {
+                font-size: 25px;
+                line-height: 1.22;
+            }
+
 }
 
 .mobile-menu__link-email {
@@ -93,6 +101,11 @@
 
     color: #757575;
     text-decoration: none;
+
+    @media screen and (max-width:400px) {
+        font-size: 20px;
+        line-height: 2;
+}
 }
 
 
@@ -113,6 +126,11 @@
         color: var(--accent-color);
     }
 
+                @media screen and (max-width:400px) {
+                    font-size: 25px;
+                    line-height: 1.5;
+                }
+
 }
 
 .mobile-menu__link-curent {
@@ -123,6 +141,14 @@
     display: flex;
     flex-wrap: wrap;
 
+        @media screen and (min-width:400px) {
+                margin-top: 32px;
+            }
+
+    @media screen and (min-width:400px) {
+        margin-top: 32px;
+    }
+    
 }
 
 .mobile-menu__item-socials {
@@ -133,12 +159,33 @@
         padding-right: 10px;
         margin-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+        @media screen and (max-width:400px) {
+            padding-right: 5px;
+            margin-right: 0;
+        }
     }
 
 }
 
+
+.menu-button:hover>.mobile-menu__icon,
+.menu-button:focus>.mobile-menu__icon {
+    fill: var(--accent-color);
+}
+
+.mobile-menu__icon {
+width: 24px;
+height: 16px;
+}
+
+
 .mobile-menu__item-socials:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+            @media screen and (max-width:400px) {
+                    
+                    margin-right: 5px;
+                }
 }
 
 .mobile-menu__link-socials {
@@ -146,12 +193,15 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
-
+    
     letter-spacing: 0.02em;
 
     color: #2196F3;
 
-
+@media screen and (max-width:400px) {
+        font-size: 8px;
+        line-height: 1.22;
+}
 
 
 }

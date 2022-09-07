@@ -34,7 +34,7 @@
 
 .header {
     
-    border-bottom: 1px solid var(--border-box);
+    border-bottom: 1px solid #ECECEC;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -171,7 +171,7 @@
 
 .header {
 
-    border-bottom: 1px solid var(--border-color);
+     border-bottom: 1px solid #ECECEC;
 
 
 }
@@ -203,7 +203,9 @@
 }
 
 .logo__black {
-    color: var(--text-title-color);
+color: $title-text-color;
+
+    // color: var(--text-title-color);
 }
 
 .navigation__list {
@@ -221,13 +223,13 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--text-title-color);
+    color: $text-color;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color var(--slow-anim);
+    transition: color $timing-function;
 
     &:hover,
     &:focus {
@@ -313,8 +315,8 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    transition: color var(--slow-anim);
+    color: $primari-text-color;
+    transition: color $timing-function;
 
     &:hover,
     &:focus {

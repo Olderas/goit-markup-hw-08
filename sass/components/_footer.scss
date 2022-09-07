@@ -35,7 +35,7 @@
 .footer-address {
     
     margin-bottom: 50px;
-        @media screen and (max-width: 767px) { 
+        @media screen and (max-width: 1199px) { 
             text-align: center;
      }
 
@@ -43,7 +43,12 @@
     @media screen and (min-width: 768px) { 
             min-width: 232px;
             margin-bottom: 60px;
+            
      }
+
+
+
+
 }
 
 .footer {
