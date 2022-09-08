@@ -1992,8 +1992,8 @@ textarea {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background: #C4C4C4;
@@ -2003,7 +2003,7 @@ textarea {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
